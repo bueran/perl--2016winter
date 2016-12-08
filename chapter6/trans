@@ -1,0 +1,15 @@
+#! usr/bin/perl -w
+use strict;
+use utf8;
+
+my $dna='acgagaga';
+my $result = attt($dna);
+print "$dna\n$result\n";
+
+
+sub attt{
+my ($dna)=@_;
+my ($trans)=$dna;
+  $trans=~s/a/t/g;
+return $trans;
+} 

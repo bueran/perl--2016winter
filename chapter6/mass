@@ -1,0 +1,14 @@
+#!/use/bin/perl -w
+use utf8;
+
+my $dna='atcgtgcaaagt';
+my $lodna=add($dna);
+print "$lodna\n\n";
+
+
+sub add{
+my ($dna)=@_;
+$dna .='CC';
+return $dna;
+}
+
